@@ -2,6 +2,7 @@ AIDS Virus Infection Prediction
 Overview
 This project aims to predict AIDS virus infection based on healthcare statistics and categorical information about patients. The dataset contains various attributes such as patient demographics, medical history, treatment history, and laboratory results. The dataset was initially published in 1996 and serves as a valuable resource for predictive modeling and exploratory data analysis in the field of healthcare analytics and epidemiology.
 
+
 Dataset
 The dataset contains the following attributes:
 
