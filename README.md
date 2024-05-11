@@ -1,11 +1,10 @@
 AIDS Virus Infection Prediction
-Overview
-This project aims to predict AIDS virus infection based on healthcare statistics and categorical information about patients. The dataset contains various attributes such as patient demographics, medical history, treatment history, and laboratory results. The dataset was initially published in 1996 and serves as a valuable resource for predictive modeling and exploratory data analysis in the field of healthcare analytics and epidemiology.
-
+This repository contains code for predicting AIDS virus infection based on healthcare statistics and categorical information about patients.
 
 Dataset
-The dataset contains the following attributes:
+The dataset used for this project contains various attributes such as patient demographics, medical history, treatment history, and laboratory results. It was initially published in 1996 and serves as a valuable resource for predictive modeling and exploratory data analysis in the field of healthcare analytics and epidemiology.
 
+Attribute Information
 time: Time to failure or censoring
 trt: Treatment indicator (0 = ZDV only; 1 = ZDV + ddI, 2 = ZDV + Zal, 3 = ddI only)
 age: Age (years) at baseline
@@ -29,9 +28,12 @@ cd420: CD4 at 20+/-5 weeks
 cd80: CD8 at baseline
 cd820: CD8 at 20+/-5 weeks
 infected: Is infected with AIDS (0=No, 1=Yes)
-Usage
-You can use this dataset for various purposes including:
+Code
+The code provided in this repository implements logistic regression models for predicting AIDS virus infection based on the dataset provided. The code is written in Python and uses libraries such as Pandas, NumPy, Seaborn, Matplotlib, and scikit-learn for data manipulation, visualization, and modeling.
 
-Predictive modeling to predict AIDS virus infection based on patient attributes.
-Exploratory data analysis to understand the relationships between different attributes and AIDS virus infection.
-Research purposes in the field of healthcare analytics and epidemiology.
+Usage
+To run the code:
+
+Clone this repository to your local machine.
+Install the required dependencies by running pip install -r requirements.txt.
+Run the aids_virus_infection_prediction.py script.
