@@ -14,6 +14,7 @@ An end-to-end Machine Learning solution designed to predict AIDS virus infection
 - [How It Is Useful](#-how-it-is-useful)
 - [Dataset Architecture & Attributes](#-dataset-architecture--attributes)
 - [What the Project Does](#-what-the-project-does)
+- [Machine Learning Models & Algorithms Used](#-machine-learning-models--algorithms-used)
 - [Technologies Used & Detailed Breakdown](#-technologies-used--detailed-breakdown)
 - [Repository Structure](#-repository-structure)
 - [Installation & Quick Start](#-installation--quick-start)
@@ -74,8 +75,23 @@ The dataset comprises demographic, clinical, treatment, and laboratory attribute
 
 1. **Data Preprocessing & Cleaning:** Handles missing data, formats features, scales continuous numerical markers (like CD4/CD8 counts), and encodes categorical health parameters.
 2. **Exploratory Data Analysis (EDA):** Visualizes feature distributions, analyzes statistical correlations, and evaluates how demographics and lab measurements affect infection outcomes.
-3. **Model Training & Benchmarking:** Trains supervised machine learning algorithms (such as Logistic Regression, Random Forest, Support Vector Machines, and Decision Trees) to identify the top-performing model.
+3. **Model Training & Benchmarking:** Trains supervised machine learning algorithms to identify the optimal model for AIDS infection prediction.
 4. **Model Performance Evaluation:** Measures predictive accuracy through Precision, Recall, F1-Score, Confusion Matrices, and ROC-AUC curves.
+
+---
+
+## 🤖 Machine Learning Models & Algorithms Used
+
+The primary notebook (`final.ipynb`) trains and evaluates multiple classification algorithms to compare performance on clinical and lab attributes:
+
+| Model / Algorithm | Type | Role & Description |
+| :--- | :--- | :--- |
+| **Logistic Regression** | Linear Classification | Estimates infection risk probabilities using linear boundaries; serves as an interpretable baseline model. |
+| **Random Forest Classifier** | Ensemble Learning | Combines multiple decision trees to model complex non-linear interactions between lab values (e.g., CD4 counts) and health history. |
+| **Support Vector Machine (SVM)** | Kernel Classifier | Maps patient attributes into higher-dimensional space to find the optimal hyperplane separating infected vs. non-infected cases. |
+| **Decision Tree Classifier** | Tree-based Model | Constructs intuitive rule-based pathways to categorize patient infection risk based on clinical thresholds. |
+| **K-Nearest Neighbors (KNN)** | Instance-based | Predicts infection status by assessing the clinical profile similarity of the nearest historical patient records. |
+| **Gradient Boosting / XGBoost** | Sequential Boosting | Optimizes predictive accuracy sequentially by reducing classification errors from previous decision trees. |
 
 ---
 
